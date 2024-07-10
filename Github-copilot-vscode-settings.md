@@ -33,5 +33,18 @@ To perform any copilot operation on a single or multiple lines, first select the
 - Open Copilot chat to fix a selected code
 ![99f09a99-61f2-47f1-95e5-999e64b79546](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/29ae6d45-b962-4f6e-a3d3-355740b4ad0f)
 
+![image](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/de094908-4a79-4dde-85d3-b87871a35852)
 
+### To ignore secret files from copilot use below settings.
+.vscode/settings.json add below config.
+
+```
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "dotenv": false
+  }
+```
   
