@@ -1,0 +1,108 @@
+Open your relevant files
+------------------------
+
+GitHub Copilot generates better suggestions by analysing the context from all open files in your editor. Keeping relevant files open provides Copilot with a broader view of your project to enhance its recommendations.
+
+Provide a top-level comment
+---------------------------
+
+When you want to generate a whole file or a boiler plate code using Copilot then starting with a top level comment is a good idea as shown below. This guidance should include detailed descriptions and examples to improve the quality of its suggestions.
+
+![image-20240521-100949](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/b71ffd57-fdf8-4aa5-a35b-7f2711a7062a)
+
+![2-add-comments-example](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/5546b370-85f8-4d8c-b3e0-870541d6a8fd)
+
+Meaningful names matters
+------------------------
+
+The names of your variables and functions are crucial for GitHub Copilot to generate meaningful suggestions. Avoid generic names like `foo` or `bar`, as they lack clear intent. Descriptive names improve Copilot's understanding and output, just as they help coworkers understand your code better. Following good coding practices ensures you get valuable and accurate assistance from GitHub Copilot.
+
+While GitHub Copilot helps you code and iterate faster, remember the old rule of programming still applies: garbage in, garbage out.
+
+![image-20240521-101057](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/9208a5bf-e731-443d-8c3b-0da2a090367b)
+
+Specificity
+-----------
+
+Be specific in your prompts to get more accurate and relevant suggestions. To receive the desired output, it is important to be specific and intentional in your inputs.
+
+![1_9uqwBbFCOEUiNW7bhIv8FA (1)](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/fac82348-1ba2-4369-8d3a-89acf889db44)
+
+Iterative Refinement
+--------------------
+
+Refine your prompts based on the suggestions you receive. Sometimes the first suggestion may not be perfect. Iterating through multiple suggestions can help find the best fit.
+
+Proper prompt with context and details.
+---------------------------------------
+
+The more contextually rich our input or prompt is, the better the prediction or output will be.
+
+Having examples, especially when processing data or manipulation strings, helps quite a bit.
+
+Ex 1:
+```
+Create a basic markdown editor in Next.js with the following features: 
+- Use react hooks 
+- Create state for markdown with default text "type markdown here" 
+- A text area where users can write markdown 
+- Show a live preview of the markdown text as I type 
+- Support for basic markdown syntax like headers, bold, italics 
+- Use React markdown npm package 
+- The markdown text and resulting HTML should be saved in the component's state and updated in real time
+```
+
+Ex 2:
+
+```
+Write some code for grades.py  
+// In prompt no context 
+Implement a function in grades.py to calculate the average grade  
+
+// Little better than before but it doesn’t clearly define the input and output requirements. 
+Implement the function calculate\_average\_grade in grades.py that takes a list of grades as input and returns the average grade as a floating-point number 
+
+// Good prompt with proper context. 
+```
+
+Make your ask simple and specific. Aim to receive a short output from GitHub Copilot:
+-------------------------------------------------------------------------------------
+
+GitHub Copilot better understands your goal when you break things down. Let GitHub Copilot generate the code after each step, rather than asking it to generate a bunch of code all at once.
+
+First write one or two comment to start the goal and then provide more comment one by one to get things done better.
+
+Give GitHub Copilot an example or two.
+--------------------------------------
+
+For instance, we wanted to extract the names from the array of data below and store it in a new array:
+
+When we didn’t show GitHub Copilot an example …
+```
+// Map through an array of arrays of objects to transform data 
+const data = [ [ { name: 'John', age: 25 },  { name: 'Jane', age: 30 } ], [ { name: 'Bob', age: 40 } ] ]; 
+const mappedData = data.map(x => [x.name](http://x.name/)); 
+console.log(mappedData); 
+// Results: [undefined, undefined] 
+```
+It generated an incorrect usage of map.
+
+By contrast, when we did provide an example …
+```
+// Map through an array of arrays of objects 
+// Example: Extract names from the data array 
+// Desired outcome: ['John', 'Jane', 'Bob'] 
+
+const data = [ 
+[{ name: 'John', age: 25 }, { name: 'Jane', age: 30 }], 
+[{ name: 'Bob', age: 40 }] 
+]; 
+const mappedData = data.flatMap(sublist => sublist.map(person => person.name)); 
+console.log(mappedData); 
+
+// Results: ['John', 'Jane', 'Bob'] 
+```
+Review generated code and Edit
+------------------------------
+
+Just as you would review a colleague’s code, you should always assess, analyze, and validate AI-generated code. Always review the generated code to ensure it meets your requirements and adheres to best practices.
