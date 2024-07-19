@@ -3,7 +3,8 @@
 ## Installation
 - Install Visual Studio Code (VS Code) from the official website.
 - Install the GitHub Copilot and Copilot Chat extension from the VS Code marketplace.
-  	Link : (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+  	- Link : (https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+    - Reference : (https://www.geeksforgeeks.org/how-to-install-github-copilot-on-vscode/)
 - Sign in with your GitHub account and enable Copilot in your editor.
 
 
