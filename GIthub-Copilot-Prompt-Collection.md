@@ -109,6 +109,11 @@ Ex: Generate unit tests covering all positive and negative scenarios , including
 
 ![att_8_for_29884483](https://github.com/Talentica/github-copilot-knowledge-base/assets/109061225/981a7c82-a402-40cd-80c9-45ef4e5b46a5)
 
+Ex: We can create a starter setup for unit test like initializing mock app , adding dependencies ,etc. Then we need to write one unit test from our own , after if we just write our use case it will suggest automatically like below.
+
+![image](https://github.com/user-attachments/assets/152bc8fc-9502-43b0-9c35-e3d39d167ce4)
+
+
 
 Writing regular expressions
 ---------------------------
