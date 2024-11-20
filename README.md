@@ -59,7 +59,7 @@ Documentation for GitHub Copilot administrators, including how to generate usage
 
 A list of additional resources and articles for further reading on GitHub Copilot.
 
-[Read more](references.md)
+[Read more](8.references.md)
 
 
 ---
