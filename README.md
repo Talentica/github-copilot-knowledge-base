@@ -17,7 +17,7 @@ This repository contains a collection of documents and resources to help you und
 
 Detailed instructions and resources for completing the GitHub Copilot course. Includes links to practical exercises and mini projects.
 
-[Read more](1.%20copilot-course.md)
+[Read more](1.copilot-course.md)
 
 ## VSCode Settings
 
@@ -53,13 +53,13 @@ A collection of prompts for generating controllers, services, repository functio
 
 Documentation for GitHub Copilot administrators, including how to generate usage stats, configure content exclusions, and manage features.
 
-[Read more](7.%20admin-doc.md)
+[Read more](7.admin-doc.md)
 
 ## References
 
 A list of additional resources and articles for further reading on GitHub Copilot.
 
-[Read more](References.md)
+[Read more](references.md)
 
 
 ---
